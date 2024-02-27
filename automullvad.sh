@@ -32,14 +32,13 @@ create_startup_script() {
     chmod +x /etc/init.d/mullvad-start
 }
 
-# Function to create a symlink to rc.local
+# Function to create a symlink to rc.local, replacing it if it already exists
 create_symlink_rclocal() {
+    if [ -e /etc/rc.local ]; then
+        rm -f /etc/rc.local
+    fi
     ln -s /etc/init.d/mullvad-start /etc/rc.local
     chmod +x /etc/rc.local
-}
-
-github_link() {
-    echo "# GitHub Repository: https://github.com/SeedSnake/AutoMullvad"
 }
 
 main() {
@@ -56,6 +55,7 @@ main() {
 
     echo "Startup script for Mullvad VPN has been created and configured."
     echo "Mullvad VPN will automatically start on reboot using the server '$SERVER_NAME'."
+    echo "GitHub Repository: https://github.com/SeedSnake/AutoMullvad"
 }
 
 
