@@ -11,7 +11,7 @@ Open a terminal in your LXC container.
 Execute the following command, replacing <URL_of_your_script_raw> with the Raw URL of your script hosted on GitHub:
 
 ```bash
-bash -c "$(curl -fsSL <URL_of_your_script_raw>)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/SeedSnake/AutoMullvad/main/automullvad.sh)"
 ```
 Follow the prompts to enter the Mullvad server name when prompted.
 
