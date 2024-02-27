@@ -23,7 +23,7 @@ Step-by-Step Execution:
 Clone this repository to your LXC container.
 
 ```bash
-git clone <repository_url>
+git clone https://github.com/SeedSnake/AutoMullvad.git
 ```
 Navigate to the directory containing the script.
 
