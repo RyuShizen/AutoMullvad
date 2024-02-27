@@ -8,7 +8,7 @@ Using Bash Command:
 
 Open a terminal in your LXC container.
 
-Execute the following command, replacing <URL_of_your_script_raw> with the Raw URL of your script hosted on GitHub:
+Execute the following command
 
 ```bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/SeedSnake/AutoMullvad/main/automullvad.sh)"
