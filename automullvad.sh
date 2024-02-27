@@ -1,4 +1,5 @@
 #!/bin/bash
+# Author: SeedSnake
 
 # Function to display header information
 header_info() {
@@ -37,8 +38,8 @@ create_symlink_rclocal() {
     chmod +x /etc/rc.local
 }
 
-add_github_link() {
-    echo "# GitHub Repository: https://github.com/SeedSnake/AutoMullvad" >> /etc/init.d/mullvad-start
+github_link() {
+    echo "# GitHub Repository: https://github.com/SeedSnake/AutoMullvad"
 }
 
 main() {
@@ -47,13 +48,11 @@ main() {
 
     prompt_server_name
 
-
     create_startup_script
-
 
     create_symlink_rclocal
 
-    add_github_link
+    github_link
 
     echo "Startup script for Mullvad VPN has been created and configured."
     echo "Mullvad VPN will automatically start on reboot using the server '$SERVER_NAME'."
