@@ -1,5 +1,8 @@
 # AutoMullvad
-This shell script automates the process of configuring and launching Mullvad VPN on reboot of your LXC container. It prompts the user to enter the Mullvad server name, creates a startup script, sets appropriate permissions, and creates a symlink for automatic execution on startup.
+
+This shell script automates the process of configuring and launching Mullvad VPN on reboot of your Linux system based on Debian (such as Debian and Ubuntu). It prompts the user to enter the Mullvad server name, creates a startup script, sets appropriate permissions, and creates a symlink for automatic execution on startup. 
+
+Your Mullvad VPN will now start automatically on the specified server at every reboot of your Linux system, whether it's your OS, a VM, or an LXC container.
 
 How to Use:
 
