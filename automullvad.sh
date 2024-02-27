@@ -51,8 +51,6 @@ main() {
 
     create_symlink_rclocal
 
-    github_link
-
     echo "Startup script for Mullvad VPN has been created and configured."
     echo "Mullvad VPN will automatically start on reboot using the server '$SERVER_NAME'."
     echo "GitHub Repository: https://github.com/SeedSnake/AutoMullvad"
