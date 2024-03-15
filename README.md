@@ -51,4 +51,4 @@ Please make sure to update tests as appropriate.
 
 ## License
 
-The Coinbase Rank Bot is distributed under the MIT License. For more information, see the `LICENSE` file in the project repository.
+AutoMullvad is distributed under the MIT License. For more information, see the `LICENSE` file in the project repository.
