@@ -41,6 +41,12 @@ create_symlink_rclocal() {
     chmod +x /etc/rc.local
 }
 
+test_vpn_connection() {
+    echo "Testing VPN connection..."
+    RESPONSE=$(curl -s https://am.i.mullvad.net/connected)
+    echo "Response from Mullvad: $RESPONSE"
+}
+
 main() {
 
     display_ascii
@@ -50,6 +56,8 @@ main() {
     create_startup_script
 
     create_symlink_rclocal
+
+    test_vpn_connection
 
     echo "Startup script for Mullvad VPN has been created and configured."
     echo "Mullvad VPN will automatically start on reboot using the server '$SERVER_NAME'."
